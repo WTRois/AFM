@@ -83,19 +83,20 @@ class _IzinPageState extends State<IzinPage> {
                               onTap: () {
                                 
                               },
-                              badge: Badge(
-                                  toAnimate: false,
-                                  shape: BadgeShape.square,
-                                  badgeColor:
-                                      (izin.status != "pending")
-                                          ? (izin.status == "reject")
-                                              ? Colors.red
-                                              : Colors.green
-                                          : Colors.orange,
-                                  borderRadius: BorderRadius.circular(8),
-                                  badgeContent: Text("${izin.status}",
-                                      style: const TextStyle(color: Colors.white)),
-                                ),));
+                              // badge: Badge(
+                              //     toAnimate: false,
+                              //     shape: BadgeShape.square,
+                              //     badgeColor:
+                              //         (izin.status != "pending")
+                              //             ? (izin.status == "reject")
+                              //                 ? Colors.red
+                              //                 : Colors.green
+                              //             : Colors.orange,
+                              //     borderRadius: BorderRadius.circular(8),
+                              //     badgeContent: Text("${izin.status}",
+                              //         style: const TextStyle(color: Colors.white)),
+                              //   ),
+                              ));
                         }
                         if (dataAbsen.isEmpty) {
                           dataAbsen.add(const Center(

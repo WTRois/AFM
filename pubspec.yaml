@@ -41,7 +41,7 @@ dependencies:
   camera: ^0.9.7
   geolocator: ^8.0.5
   geocoding: ^2.0.2
-  location: ^4.3.0
+  location: ^5.0.3
   permission_handler: ^9.0.2
   mapbox_gl: ^0.16.0
   flutter_datetime_picker: ^1.5.1

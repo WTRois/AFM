@@ -141,21 +141,21 @@ class _RiwayatPageState extends State<RiwayatPage>
                                           id: riwayatAbsensi.id)),
                             );
                           },
-                          badge: (riwayatAbsensi.status != "due")
-                              ? Badge(
-                                  toAnimate: false,
-                                  shape: BadgeShape.square,
-                                  badgeColor:
-                                      (riwayatAbsensi.status != "pending")
-                                          ? (riwayatAbsensi.status == "reject")
-                                              ? Colors.red
-                                              : Colors.green
-                                          : Colors.orange,
-                                  borderRadius: BorderRadius.circular(8),
-                                  badgeContent: Text("${riwayatAbsensi.status}",
-                                      style: const TextStyle(color: Colors.white)),
-                                )
-                              : SizedBox(),
+                          // badge: (riwayatAbsensi.status != "due")
+                          //     ? Badge(
+                          //         toAnimate: false,
+                          //         shape: BadgeShape.square,
+                          //         badgeColor:
+                          //             (riwayatAbsensi.status != "pending")
+                          //                 ? (riwayatAbsensi.status == "reject")
+                          //                     ? Colors.red
+                          //                     : Colors.green
+                          //                 : Colors.orange,
+                          //         borderRadius: BorderRadius.circular(8),
+                          //         badgeContent: Text("${riwayatAbsensi.status}",
+                          //             style: const TextStyle(color: Colors.white)),
+                          //       )
+                          //     : SizedBox(),
                         ));
                       }
                       return ListView(

@@ -84,74 +84,74 @@ class _KalenderJadwalKerjaPageState extends State<KalenderJadwalKerjaPage> {
                             ],
                           ));
                         } else {
-                          var d = snapshot.data![i - index];
-                          List<Widget> j = [];
-                          for (var x = 0; x < d['jadwal_kerja'].length; x++) {
-                            var jk = d['jadwal_kerja']![x];
-                            if(jk['status_kerja'] == "work-day"){
-                              j.add(Badge(
-                                padding: EdgeInsets.all(2),
-                                badgeContent: Text(
-                                  jk['id'].toString(),
-                                  style:
-                                      TextStyle(color: Colors.white, fontSize: 9),
-                                ),
-                                badgeColor: Colors.green,
-                                shape: BadgeShape.square,
-                              ));
-                            } else {
-                              j.add(Badge(
-                                padding: EdgeInsets.all(2),
-                                badgeContent: Text(
-                                  jk['id'].toString(),
-                                  style:
-                                      TextStyle(color: Colors.white, fontSize: 9),
-                                ),
-                                badgeColor: Colors.orange,
-                                shape: BadgeShape.square,
-                              ));
-                            }
-                            
-                          }
-                          data.add(SizedBox(
-                            // color:
-                            //     (j.length > 0) ? Colors.white : Colors.red[400],
-                            height: 100,
-                            child: Container(
-                              margin: const EdgeInsets.all(2.0),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.blueAccent)),
-                              child: Stack(
-                                children: [
-                                  Positioned.fill(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(15),
-                                      child: Center(child: Text("${d['day']}",
-                                          style: TextStyle(fontSize: 12))),
-                                    ),
-                                  ),
-                                  Positioned(
-                                      left: 0,
-                                      top: 0,
-                                      child: (j.length > 0)
-                                          ? Row(
-                                              children: j,
-                                            )
-                                          : Badge(
-                                              padding: const EdgeInsets.all(2),
-                                              badgeContent: const Text(
-                                                "Off",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 10),
-                                              ),
-                                              badgeColor: Colors.red,
-                                              shape: BadgeShape.square,
-                                            ))
-                                ],
-                              ),
-                            ),
-                          ));
+                          // var d = snapshot.data![i - index];
+                          // List<Widget> j = [];
+                          // for (var x = 0; x < d['jadwal_kerja'].length; x++) {
+                          //   var jk = d['jadwal_kerja']![x];
+                          //   if(jk['status_kerja'] == "work-day"){
+                          //     j.add(Badge(
+                          //       padding: EdgeInsets.all(2),
+                          //       badgeContent: Text(
+                          //         jk['id'].toString(),
+                          //         style:
+                          //             TextStyle(color: Colors.white, fontSize: 9),
+                          //       ),
+                          //       badgeColor: Colors.green,
+                          //       shape: BadgeShape.square,
+                          //     ));
+                          //   } else {
+                          //     j.add(Badge(
+                          //       padding: EdgeInsets.all(2),
+                          //       badgeContent: Text(
+                          //         jk['id'].toString(),
+                          //         style:
+                          //             TextStyle(color: Colors.white, fontSize: 9),
+                          //       ),
+                          //       badgeColor: Colors.orange,
+                          //       shape: BadgeShape.square,
+                          //     ));
+                          //   }
+                          //
+                          // }
+                          // data.add(SizedBox(
+                          //   // color:
+                          //   //     (j.length > 0) ? Colors.white : Colors.red[400],
+                          //   height: 100,
+                          //   child: Container(
+                          //     margin: const EdgeInsets.all(2.0),
+                          //     decoration: BoxDecoration(
+                          //         border: Border.all(color: Colors.blueAccent)),
+                          //     child: Stack(
+                          //       children: [
+                          //         Positioned.fill(
+                          //           child: Padding(
+                          //             padding: const EdgeInsets.all(15),
+                          //             child: Center(child: Text("${d['day']}",
+                          //                 style: TextStyle(fontSize: 12))),
+                          //           ),
+                          //         ),
+                          //         Positioned(
+                          //             left: 0,
+                          //             top: 0,
+                          //             child: (j.length > 0)
+                          //                 ? Row(
+                          //                     children: j,
+                          //                   )
+                          //                 : Badge(
+                          //                     padding: const EdgeInsets.all(2),
+                          //                     badgeContent: const Text(
+                          //                       "Off",
+                          //                       style: TextStyle(
+                          //                           color: Colors.white,
+                          //                           fontSize: 10),
+                          //                     ),
+                          //                     badgeColor: Colors.red,
+                          //                     shape: BadgeShape.square,
+                          //                   ))
+                          //       ],
+                          //     ),
+                          //   ),
+                          // ));
                         }
                       }
                       return GridView.count(

@@ -17,8 +17,12 @@ class CustomStyle extends StyleHook {
   double get iconSize => 24;
 
   @override
-  TextStyle textStyle(Color color) {
-    return TextStyle(fontSize: 12, color: color);
+  TextStyle textStyle(Color color, String? fontFamily) {
+
+    // TODO: implement textStyle
+    // ...
+
+    throw UnimplementedError();
   }
 }
 
